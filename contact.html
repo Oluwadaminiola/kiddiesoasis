@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KiddiesOasis</title>
+
+    <link rel="icon" type="image/ico" href="img/logo.png" />
+
+    <meta name="viewport" content="width=device-width">
+
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/bootstrap.js" ></script>
+    <script src="js/aos.js" ></script>
+    <!-- <script src="assets/lib/wow/wow.js" ></script> -->
+
+    <!-- <script src="assets/js/scrollreveal.js" ></script> -->
+    <!-- <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="assets/lib/animate/animate.css" rel="stylesheet"> -->
+
+    <link href="ionicons/css/ionicons.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="css/aos.css" >
+    <link rel="stylesheet" href="css/main.css" >
+    <script src="js/main.js" ></script>
+    <script src="js/emailvalidate.js" ></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-expand-md fixed-top" >
+    <div class="container-fluid" >
+        <a class="navbar-brand" href="index.html" >
+            <img src="img/logo.png"  ><br>
+            ...raising happy kids together
+        </a>
+        <button type="button" class="navbar-toggler" data-target="#myCar" data-toggle="collapse" >
+            <i class="ion-navicon-round" ></i>
+        </button>
+        <div class="collapse navbar-collapse" id="myCar" >
+            <ul class="navbar-nav nav ml-auto" >
+                    <li class="nav-item px-3"><a class="nav-link" href="index.html" >Home</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="about.html" >About</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="gallery.html" >Gallery</a></li>
+                    <li class="nav-item px-3 active"><a class="nav-link" href="contact.html" >Contact Us</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="enrol.html" >Enrol!!</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid" >
+    <div  class="row" style="margin-top: +7em;" >
+        <div class="col-12 p-0" >
+            <div class="shorty text-center " >
+                <div class="dark-overlay-2 " >
+                        <h4>Contact Us</h4>            
+                </div>        
+            </div>
+        </div>
+        <div class="col-md-12 px-5 my-5" >
+            <div class="con-form" >
+                    
+                    <p class="text-center" >
+                        Drop a message or visit us.
+                    </p>
+
+                    <form  >
+                        <div class="form-group  row" >
+                            <div class="col-md-2" ></div>
+                            <div class="col-md-8" >
+                                    <label>Name</label>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Jane Doe" >
+                                    <label>Phone Number</label>
+                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="08023456673" >
+                                    <label>Email</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="abc@gmail.com" >
+                                    <label>Message</label>
+                                    <textarea class="form-control" name="message" id="message" ></textarea>
+                                    <button class="btn btn-con mt-3" id="submitbtn" onclick="sendMail(); return false" >
+                                         <i class="ion-paper-airplane" ></i>&nbsp;   Send
+                                    </button>
+                            </div>
+                            
+                        </div>
+                    </form>
+            </div>
+        </div>
+        <div class="col-12 p-0" >
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA5IpEiMxBDh29l0WksgGFT2NKvWWqmHhI'>
+                    </script><div style='overflow:hidden;height: 20em;width:100%;'>
+                    <div id='gmap_canvas' style='height: 20em;width:100%;'></div>
+                        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                    </div> <a href='https://www.embedmap.net/'>embedding google maps</a> 
+                    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=cb521447f1b238daca5dbc3e7c09d9664b00e49a'></script>
+                    <script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(6.6046148186280815,3.289020219079589),
+                        mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'),
+                        myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(6.6046148186280815,3.289020219079589)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>gowon estate, egbeda<br> lagos<br>'});
+                        google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+        </div>
+        <div class="col-md-12 p-0" >
+                <div class=" footer py-5" >
+                        <p class="text-center" >
+                                ©2018 Kiddies Oasis, C close, 34 road, Egbeda, Gowon Estate(Lagos, Nigeria)<br>
+                                Tel: +234 708 7290 841 Mail: info.Kiddiesoasis@gmail.com<br>
+                                Web design by Daminiola.<br><br>
+                                <i class="ion-social-facebook" >&nbsp&nbsp&nbsp</i> <i class="ion-social-twitter" ></i>&nbsp&nbsp&nbsp <i class="ion-social-instagram-outline" ></i>
+                                
+                        </p>
+                </div>
+        </div>
+        
+    </div>
+</div>
+</body>
+<script >
+    
+</script>
+</html>
