@@ -77,6 +77,43 @@ body{
         width: 135px !important;
     } */
   }
+
+
+  .gallery {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -moz-column-width: 25%;
+    -webkit-column-width: 25%;
+    column-width: 25%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+    @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+    }
+    
+    @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    }
+    }
+
+
+
   .horimage1{
       background: url('../img/2 (1).jpg');
       background-size: cover;
@@ -245,13 +282,13 @@ nav{
     box-shadow: 0px 2px 15px rgba(195, 203, 222, 0.25);
     width: 100vw;
 }
-nav.shrink{
-    background: rgba(0, 0, 0, 0.8);
+nav.chade{
+    background: rgba(0, 0, 0, 0.8) !important;
     color: #fff !important;
-    box-shadow: none;
+    /* box-shadow: none; */
     /* height: 6.5em; */
 }
-nav.shrink .nav-item a, nav.shrink .navbar-brand, nav.shrink i{
+nav.chade .nav-item a, nav.chade .navbar-brand, nav.chade i{
     color: #fff !important;
 }
 .navbar-brand{
@@ -268,14 +305,17 @@ nav.shrink .nav-item a, nav.shrink .navbar-brand, nav.shrink i{
     color: #262626 !important;
     font-weight: 600;
 }
-.nav-item.active a, nav.shrink .nav-item.active a{
+.nav-item.active a, nav.chade .nav-item.active a{
     color: #f5872e !important;
 }
 .nav-item a:hover{
     color: #f5872e;
     transition: .2 ease-in-out;
 }
-
+.nav-item i{
+    color: #262626;
+    font-size: 1.5em;
+}
 .welcome{
     /* width: 100%; */
     background: #f5b92e;
@@ -338,7 +378,18 @@ nav.shrink .nav-item a, nav.shrink .navbar-brand, nav.shrink i{
     background-size: contain !important;
     padding: 5%;
     color: #262626;
+    /* font-family: montserrat; */
+}
+.enroll b{
     font-family: montserrat;
+}
+.enroll p{
+    font-family: pacifico;
+}
+.enroll i{
+    font-size: 2.5em;
+    color: #f5872e !important;
+    font-weight: bold;
 }
 .services{
     background: #f5872e;
@@ -428,14 +479,17 @@ nav.shrink .nav-item a, nav.shrink .navbar-brand, nav.shrink i{
     color: #262626;
     font-size: 1.5em;
 }
+
 .con-form label{
-    font-size: 1em;
+    font-size: .8em;
     color: #262626;
-    font-family: montserrat;
-    text-transform: uppercase;
+    font-family: pacifico;
+    /* text-transform: uppercase; */
     line-height: 25px;
-    margin-top: +1em;
+    /* margin-top: +1em; */
+    font-weight: lighter;
 }
+
 .line{
     border: 1px solid #f5872e;
     width: 100%;
@@ -443,18 +497,20 @@ nav.shrink .nav-item a, nav.shrink .navbar-brand, nav.shrink i{
 .btn-con{
     border: 3px solid #f5872e;
     color: #f5872e;
-    border-radius: 0%;
+    /* border-radius: 0%; */
     font-weight: 600;
     font-family: montserrat;
     font-size: 1em;
-    line-height: 35px;
+    /* line-height: 35px; */
     letter-spacing: .9px;
     text-transform: uppercase;
     background: transparent;
 }
+
+
 .btn-con:hover{
-    background: #f5872e;
-    color: #262626;
+    background: #f5872e !important;
+    color: #fff !important;
     transition: .3s ease-in-out;
 }
 .footer{

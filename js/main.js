@@ -1,17 +1,17 @@
-
-window.onload = function() {
-    $(window).scroll(function(){
-        if($(document).scrollTop() > 50) {
-            $('nav').addClass('shrink');
-        }
-        else if($(document).scrollTop() > 100) {
-            $('.navbar').addClass('shrink2');
-            $('nav').removeClass('shrink');
-        }
-        else{
-            $('nav').removeClass('shrink');
-            $('.navbar').removeClass('shrink2');
-        }
+// $(window).scroll(function() {
+//     if ($(document).scrollTop() > 100) {
+//       $('nav').addClass('chade');
+//     } else {
+//       $('nav').removeClass('chade');
+//     }
+//   });
+ window.onload = function() {
+    $(window).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+        $('nav').addClass('chade');
+      } else {
+        $('nav').removeClass('chade');
+      }
     });
     AOS.init({
         duration: 1200,

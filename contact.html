@@ -8,49 +8,58 @@
 
     <meta name="viewport" content="width=device-width">
 
-    <script src="js/jquery.min.js" ></script>
-    <script src="js/bootstrap.js" ></script>
-    <script src="js/aos.js" ></script>
-    <!-- <script src="assets/lib/wow/wow.js" ></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-    <!-- <script src="assets/js/scrollreveal.js" ></script> -->
-    <!-- <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- <link href="assets/lib/animate/animate.css" rel="stylesheet"> -->
+    <link href="css/mdb.min.css" rel="stylesheet">
 
     <link href="ionicons/css/ionicons.css" rel="stylesheet" >
 
     <link rel="stylesheet" href="css/aos.css" >
     <link rel="stylesheet" href="css/main.css" >
-    <script src="js/main.js" ></script>
-    <script src="js/emailvalidate.js" ></script>
+    <!-- <script src="js/main.js" ></script> -->
 
 </head>
 <body>
-
-<nav class="navbar navbar-default navbar-expand-md fixed-top" >
+<nav class="navbar navbar-default navbar-expand-md scrolling-navbar fixed-top" >
     <div class="container-fluid" >
         <a class="navbar-brand" href="index.html" >
-            <img src="img/logo.png"  ><br>
-            ...raising happy kids together
+            <img src="img/logo.png" width="70%" >
         </a>
         <button type="button" class="navbar-toggler" data-target="#myCar" data-toggle="collapse" >
             <i class="ion-navicon-round" ></i>
         </button>
         <div class="collapse navbar-collapse" id="myCar" >
-            <ul class="navbar-nav nav ml-auto" >
+            <ul class="navbar-nav nav mr-auto" >
                     <li class="nav-item px-3"><a class="nav-link" href="index.html" >Home</a></li>
                     <li class="nav-item px-3"><a class="nav-link" href="about.html" >About</a></li>
                     <li class="nav-item px-3"><a class="nav-link" href="gallery.html" >Gallery</a></li>
                     <li class="nav-item px-3 active"><a class="nav-link" href="contact.html" >Contact Us</a></li>
                     <li class="nav-item px-3"><a class="nav-link" href="enrol.html" >Enrol!!</a></li>
             </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item">
+                          <a class="nav-link" href="https://www.facebook.com/kiddiesoasis/">
+                            <i class="ion-social-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.twitter.com/kiddiesoasis/">
+                            <i class="ion-social-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item" >
+                          <a class="nav-link" href="https://www.instagram.com/kiddiesoasis/">
+                            <i class="ion-social-instagram-outline"></i>
+                          </a>
+                        </li>
+            </ul>
         </div>
     </div>
 </nav>
 
 <div class="container-fluid" >
-    <div  class="row" style="margin-top: +7em;" >
+    <div  class="row" style="margin-top: +4em;" >
         <div class="col-12 p-0" >
             <div class="shorty text-center " >
                 <div class="dark-overlay-2 " >
@@ -69,17 +78,26 @@
                         <div class="form-group  row" >
                             <div class="col-md-2" ></div>
                             <div class="col-md-8" >
-                                    <label>Name</label>
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Jane Doe" >
-                                    <label>Phone Number</label>
-                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="08023456673" >
-                                    <label>Email</label>
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="abc@gmail.com" >
-                                    <label>Message</label>
-                                    <textarea class="form-control" name="message" id="message" ></textarea>
-                                    <button class="btn btn-con mt-3" id="submitbtn" onclick="sendMail(); return false" >
-                                         <i class="ion-paper-airplane" ></i>&nbsp;   Send
-                                    </button>
+                                <div class="md-form mt-2">
+                                    <input type="text" id="name" class="form-control">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="md-form mt-2">
+                                    <input type="tel" id="phone" class="form-control">
+                                    <label for="phone">Phone Number</label>
+                                </div>
+                               
+                                <div class="md-form mt-2">
+                                    <input type="email" id="Email" class="form-control">
+                                    <label for="Email">E-mail</label>
+                                </div>
+                                <div class="md-form mt-2">
+                                    <textarea type="text" id="Message" class="form-control md-textarea" rows="3"></textarea>
+                                    <label for="Message">Message</label>
+                                </div>
+                                <button class="btn btn-rounded btn-block z-depth-0 my-4 waves-effect btn-con mt-3" id="submitbtn" onclick="sendMail(); return false" >
+                                    <i class="ion-paper-airplane" ></i>&nbsp;   Send
+                                </button>
                             </div>
                             
                         </div>
@@ -102,10 +120,9 @@
         <div class="col-md-12 p-0" >
                 <div class=" footer py-5" >
                         <p class="text-center" >
-                                ©2018 Kiddies Oasis, C close, 34 road, Egbeda, Gowon Estate(Lagos, Nigeria)<br>
+                                ©2019 Kiddies Oasis, C close, 34 road, Egbeda, Gowon Estate(Lagos, Nigeria)<br>
                                 Tel: +234 708 7290 841 Mail: info.Kiddiesoasis@gmail.com<br>
-                                Web design by Daminiola.<br><br>
-                                <i class="ion-social-facebook" >&nbsp&nbsp&nbsp</i> <i class="ion-social-twitter" ></i>&nbsp&nbsp&nbsp <i class="ion-social-instagram-outline" ></i>
+                                Web design by Daminiola.<br>
                                 
                         </p>
                 </div>
@@ -113,8 +130,17 @@
         
     </div>
 </div>
+
+
+<!--Scripts-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/mdbpro.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/aos.js" ></script>
+
+
 </body>
-<script >
-    
-</script>
+
+
 </html>
